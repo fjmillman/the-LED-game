@@ -1,2 +1,5 @@
 # the-LED-game
-A small experimental Arduino project.
+A small experimental Arduino project that was written in C and made use of 6 LED lights (4 red, 1 green, and 1 white), a piezo element that makes a sound, a servo which rotates as output, and a potentiometer which can be rotated as input, and a button as input.
+
+## Instructions
+Five LEDs will flash in order at a certain speed, the player must click on the button when the green LED is lit in order to score a point which will lead to the white LED flashing twice and a two tone from the piezo element to signal this, the servo is then updated to a new position for the score. If the red LED is lit when clicking on the button the player will lose a point which is signalled by the white LED giving a single flash and a single tone from the piezo element, the servo will then be updated to show the current score. The speed of the game can be controlled through the potentiometer from a slow, easy game to a quick paced difficult game. If the player reaches a score of 18, the scoring mechanism is reset back to zero to play again.
